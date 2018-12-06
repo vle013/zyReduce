@@ -19,10 +19,10 @@
 li a {
   display: block;
   color: #000;
-  height: 100px;
+  height: 67px;
   
   text-align: center;
-  padding: 5px 16px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
@@ -44,9 +44,11 @@ li a:hover:not(.active) {
             <ul >
                     <li><a href="#">Home</a></li>
                     <li><a href="#credit">Credit</a></li>
-                    <li><a href="#gradesvmean">Grades v Mean</a></li>
+                    <li><a href="#completed">Students Completed</a></li>
+                    <li><a href="#gradesvmean">Submissions and Resource Type</a></li>
                     <li><a href="#anova">ANOVA</a></li>
                     <li><a href="#correlations">Correlations</a></li>
+                    <li><a href="#scheduling">Scheduling</a></li>
                     <li><a href="#about">About Us</a></li>
                   </ul>
     </nav>
@@ -67,8 +69,7 @@ li a:hover:not(.active) {
 <h1 style="color: white;">Credit</h1>
 </div>
 <div style="margin-left: auto; margin-right: auto; width: 1001px;">
-<iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMzI1ZTU0OTMtNjNkZC00NmM0LWEzZjYtNThhM2UyNmJiZTFiIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
+<iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiOWViNGI0MjQtMGNmMi00NjZkLWEzZDQtYmYzYzdmZDcyMTVjIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 <p> A note:~from this data we can see that some students spent significantly more time doing zybooks submissions. However, the credit they recieved appears to vary on quite a large scale. The zybooks in this particular class, CS10, is mandatory and is considered a homework assignment. In the case of this graph, the average score is around 275 based on the graph on the lower left. However, we can see that the total possible questions accumulate to 447.
 </p>	
 <p>
@@ -77,14 +78,26 @@ Looking at the data by resource type, we can see that the custom questions has t
 </div>
 
 
+<div style="margin-left: auto; margin-right: auto; width: 1001px;">
+  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiN2E5MDEyODAtZGVhNi00OGVmLThjMDktYTQ4M2EwNTRmMzVmIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+<p>in credit 3 it seems that people w less tries tend to score lower.. idk why
+</p>
+
+<div style="margin: 0 auto; background-color: green; width: 100%; text-align: center;" id="completed">
+  <h1 style="color: white;">Students Completed</h1>
+  </div>
+  <div style="margin-left: auto; margin-right: auto; width: 1001px;">
+  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMzRkNThkMTktYTgwMS00YTYyLThhZDAtMTFlODcxYTdmNTQ0IiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+  </div>
+
+</div>
 
 <div style="margin: 0 auto; background-color: green; width: 100%; text-align: center;" id="gradesvmean">
-        <h1 style="color: white;">Grades vs. Means</h1>
+        <h1 style="color: white;">Submissions and Resource Type</h1>
         
 </div>
 <div style="margin-left: auto; margin-right: auto; width: 1001px;">
         <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNTA1YzBkODEtZmExZS00YWFlLTgwNmYtYzUyMjNlZmZlNjQzIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
 <p> In this case, we compare the marginal queso of all the resource types. </p>
 
 
@@ -98,12 +111,11 @@ Looking at the data by resource type, we can see that the custom questions has t
   
 </div>
 <div style="margin-left: auto; margin-right: auto; width: 1001px;">
-  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNGIwYWQ0MDUtMDkwMC00NjA2LTliOGItOTE3YjA1YTcyOWZiIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
+  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZDE3ZTg3MmUtODExZC00ZDBkLTk1YWUtN2E3YWI4ZjAyMmZkIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
 <p> In this case, we compare the ANOVA queso of all the resource types. </p>
 
-
+<iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiOTk5MmU2ZDItMDg1MS00OTYwLWI5MDQtZDUyMDAxY2NmYWU5IiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 </div>
@@ -113,16 +125,26 @@ Looking at the data by resource type, we can see that the custom questions has t
   
 </div>
 <div style="margin-left: auto; margin-right: auto; width: 1001px;">
-  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNGIwYWQ0MDUtMDkwMC00NjA2LTliOGItOTE3YjA1YTcyOWZiIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
-
+  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNTJjMTAzOTgtNjU1Yi00NjEyLTkyMTktYzU2MzBkYjM1ZWQxIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
 <p> In this case, we compare the Correlation queso of all the resource types. </p>
 
-
+<iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMWNhNjIyOTMtMDk2OS00NGRjLTk1ZTktZTlkMTA5YzVlNTEzIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
 
 </div>
+<div style="margin: 0 auto; background-color: green; width: 100%; text-align: center;" id="scheduling">
+  <h1 style="color: white;">Scheduling</h1>
+  
+</div>
+<div style="margin-left: auto; margin-right: auto; width: 1001px;">
+  <iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiNTJjMTAzOTgtNjU1Yi00NjEyLTkyMTktYzU2MzBkYjM1ZWQxIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
 
+<p> In this case, we compare the Scheduling queso of all the resource types. </p>
+
+<iframe style="margin-left: auto; margin-right: auto;" width="800" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZmU2ZWVlNmItZjgzYS00MjZhLTlmZjQtNWY2MTZlMjhkN2JiIiwidCI6Ijc5OWY2ZTg0LWZkMjYtNDE3OC1iZjJiLTg2YjIzMGFkMDVkNyIsImMiOjZ9" frameborder="0" allowFullScreen="true"></iframe>
+
+</div>
 
 <div style="margin: 0 auto; background-color: green; width: 100%; text-align: center;" id="about">
   <h1 style="color: white;">About Us</h1>
